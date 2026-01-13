@@ -2,6 +2,6 @@
 puts "Choisissez un nombre ?" 
 print "> "
 number = gets.chomp.to_i
-number.times do '|Salut ça farte ?|'
+number.times do |i|
     puts 'Salut ça farte ?'
 end
