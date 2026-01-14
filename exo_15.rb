@@ -2,8 +2,12 @@
 puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
 print "> "
 n = gets.chomp.to_i
-puts "Voici la pyramide :"
+if n < 1 || n > 25
+    puts "Nombre d'étage invalide"
+else
+    puts "Voici la pyramide :"
 bloc = '#'
-n.times do |i|
-    puts bloc*(i+1)
+    n.times do |i|
+        puts bloc*(i+1)
+    end
 end
